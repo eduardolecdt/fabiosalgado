@@ -1,0 +1,27 @@
+/*
+
+global SCROLLBAR
+
+*/
+
+html {
+  scrollbar-color: #ffffff #06070c;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #06070c;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: var(--cor-degrade-cima);
+  width: 10px;
+  height: 10px;
+}

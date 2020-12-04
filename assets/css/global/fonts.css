@@ -1,0 +1,29 @@
+/*
+
+global FONTS
+
+*/
+
+@font-face {
+  font-family: 'poppins_regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../docs/fonts/poppins-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'poppins_medium';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../docs/fonts/poppins-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'poppins_extrabold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../docs/fonts/poppins-extrabold.woff') format('woff');
+}

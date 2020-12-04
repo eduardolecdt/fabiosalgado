@@ -1,0 +1,23 @@
+/*
+
+global VARIABLES
+
+*/
+
+/* Cores */
+
+:root {
+
+--cor-branco: #FFFFFF;
+
+}
+
+/* Fontes */
+
+:root {
+
+--fonte-regular: 'poppins_regular';
+--fonte-medium: 'poppins_medium';
+--fonte-extrabold: 'poppins_extrabold';
+
+}
