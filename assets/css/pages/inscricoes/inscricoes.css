@@ -7,3 +7,6 @@ pages INSCRICOES
 @import '../../global/global.css';
 
 /* partials */
+
+@import './partials/header.css';
+@import './partials/header-modal.css';

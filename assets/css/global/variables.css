@@ -9,6 +9,17 @@ global VARIABLES
 :root {
 
 --cor-branco: #FFFFFF;
+--cor-laranja: #ff9827;
+
+--cor-cinza-1: #efeef5;
+--cor-cinza-2: #dfdee4;
+--cor-cinza-3: #b6b4bd;
+--cor-cinza-4: #8f8d96;
+--cor-cinza-5: #65636c;
+
+--cor-secundaria-1: #0b071e;
+--cor-secundaria-2: #100b27;
+--cor-secundaria-3: #140e2f;
 
 }
 

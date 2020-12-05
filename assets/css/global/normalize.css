@@ -20,14 +20,14 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  background-color: #06070c;
+  background-color: #0b071e;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #06070c;
+  background-color: #0b071e;
 }
 
 body.bloqueado {
@@ -146,7 +146,7 @@ svg {
 
 ::selection {
   color: #ffffff;
-  background-color: #12fff7;
+  background-color: #ff9827;
 }
 
 h1,h2,h3,h4,h5,h6 {

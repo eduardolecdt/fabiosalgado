@@ -1,0 +1,230 @@
+/*
+
+INSCRICOES partials > HEADER
+
+*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 100vh;
+  background-image: url('../../../../images/pages/inscricoes/background-header.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+/* header > imagem */
+
+header .imagem img {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 150px;
+  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--cor-laranja);
+  box-shadow: 0px 0px 30px 0px rgb(11, 7, 30, 0.8);
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 1;
+  animation: imagemAutorAbrir 1s linear infinite;
+}
+
+header .imagem img:hover {
+  opacity: 0.7;
+}
+
+@keyframes imagemAutorAbrir {
+  0%, 100% {transform: scale(1); box-shadow: 0px 0px 30px 0px rgb(11, 7, 30, 0.8);}
+  50% {transform: scale(1.1); box-shadow: 0px 0px 30px 0px rgb(255, 152, 39, 0.8);}
+}
+
+/* header > texto */
+
+header .texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+header .texto .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(11, 7, 30, 0.95);
+  box-shadow: 0px 0px 100px 0px rgb(11, 7, 30, 0.8);
+  width: 100%;
+  height: 100%;
+  min-height: 90vh;
+  max-width: 700px;
+  padding: 100px 50px 50px 50px;
+  position: relative;
+}
+
+header .texto .quadro h2 {
+  font-family: var(--fonte-extrabold);
+  font-size: 4rem;
+  color: var(--cor-laranja);
+  padding: 5px 15px;
+  border: 3px solid var(--cor-laranja);
+  position: absolute;
+  top: -30px;
+}
+
+header .texto .quadro h3 {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  letter-spacing: 15px;
+  margin-right: -15px;
+  color: var(--cor-laranja);
+  position: absolute;
+  top: 70px;
+}
+
+header .texto .quadro p {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  color: var(--cor-branco);
+  padding-bottom: 30px;
+}
+
+header .texto .quadro p span {
+  font-family: var(--fonte-medium);
+  color: var(--cor-laranja);
+}
+
+header .texto .quadro form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+header .texto .quadro form input {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  color: var(--cor-branco);
+  background-color: rgb(255, 255, 255, 0.05);
+  border: 1px solid var(--cor-secundaria-3);
+  padding: 30px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: all 0.2s;
+}
+
+header .texto .quadro form input::placeholder {
+  color: var(--cor-branco);
+  opacity: 0.6;
+}
+
+header .texto .quadro form input:focus {
+  color: var(--cor-laranja);
+  background-color: rgb(255, 255, 255, 0.1);
+  opacity: 1;
+}
+
+header .texto .quadro form button {
+  font-family: var(--fonte-extrabold);
+  font-size: 1.1rem;
+  color: var(--cor-branco);
+  background-color: var(--cor-laranja);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 50px;
+  min-height: 50px;
+  width: 270px;
+  position: relative;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid var(--cor-secundaria-1);
+}
+
+header .texto .quadro form button div {
+  position: absolute;
+  bottom: -10px;
+  height: 5px;
+  min-height: 5px;
+  width: 50%;
+  background-color: var(--cor-laranja);
+  transition: all 0.2s;
+}
+
+header .texto .quadro form button:hover {
+  opacity: 0.8;
+}
+
+header .texto .quadro form button:hover div {
+  width: 100%;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  header .imagem img {
+    bottom: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    border: 3px solid var(--cor-laranja);
+  }
+  header .texto {
+    padding: 0px 10px;
+  }
+  header .texto .quadro {
+    box-shadow: 0px 0px 50px 0px rgb(11, 7, 30, 0.7);
+    padding: 100px 30px 50px 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .texto .quadro {
+    box-shadow: 0px 0px 30px 0px rgb(11, 7, 30, 0.7);
+    padding: 0px 25px 30px 25px;
+  }
+  header .texto .quadro h2 {
+    font-size: 3rem;
+    top: -35px;
+  }
+  header .texto .quadro h3 {
+    top: 50px;
+  }
+  header .texto .quadro p {
+    font-size: 0.9rem;
+    max-width: 600px;
+    text-align: left;
+  }
+  header .texto .quadro form input {
+    font-size: 1rem;
+    padding: 20px 15px;
+  }
+  header .texto .quadro form button {
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    height: 40px;
+    min-height: 40px;
+    width: 220px;
+    border-bottom: 3px solid var(--cor-secundaria-1);
+  }
+  header .texto .quadro form button div {
+    bottom: -6px;
+    height: 3px;
+    min-height: 3px;
+  }
+}
