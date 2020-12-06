@@ -1,0 +1,152 @@
+/*
+
+INDEX partials SECTION > PRECO
+
+*/
+
+section.preco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 50px;
+  min-height: 600px;
+  background-image: url('../../../../images/pages/index/background-preco.png');
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+/* Texto */
+
+section.preco .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+}
+
+section.preco .texto h2 {
+  font-family: var(--fonte-extrabold);
+  font-size: 2rem;
+  width: 100%;
+  max-width: 550px;
+  color: var(--cor-branco);
+  padding-bottom: 10px;
+}
+
+section.preco .texto p {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 650px;
+  color: var(--cor-branco);
+}
+
+/* Quadra */
+
+section.preco .conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.preco .conteudo .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 80px 30px;
+  background-color: var(--cor-secundaria-1);
+}
+
+section.preco .conteudo .quadro p.total {
+  font-family: var(--fonte-extrabold);
+  font-size: 3rem;
+  color: var(--cor-laranja);
+}
+
+section.preco .conteudo .quadro p.total span {
+  font-size: 6rem;
+}
+
+section.preco .conteudo .quadro p.parcelado {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  color: var(--cor-branco);
+  padding: 10px 0px 20px 0px;
+}
+
+section.preco .conteudo .quadro p.parcelado span {
+  font-size: 1.3rem;
+}
+
+section.preco .conteudo .quadro button {
+  font-family: var(--fonte-extrabold);
+  font-size: 1.1rem;
+  color: var(--cor-branco);
+  background-color: var(--cor-laranja);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 50px;
+  min-height: 50px;
+  width: 220px;
+  position: relative;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid var(--cor-secundaria-1);
+}
+
+section.preco .conteudo .quadro button div {
+  position: absolute;
+  bottom: -10px;
+  height: 5px;
+  min-height: 5px;
+  width: 50%;
+  background-color: var(--cor-laranja);
+  transition: all 0.2s;
+}
+
+section.preco .conteudo .quadro button:hover {
+  opacity: 0.8;
+}
+
+section.preco .conteudo .quadro button:hover div {
+  width: 100%;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 900px) {
+  section.preco {
+    flex-direction: column;
+    padding: 100px 20px;
+    min-height: auto;
+  }
+  section.preco .texto {
+    padding-bottom: 50px;
+  }
+  section.preco .texto h2 {
+    font-size: 1.5rem;
+    max-width: 550px;
+  }
+  section.preco .texto p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+  section.preco .conteudo .quadro p.total {
+    font-size: 2rem;
+  }
+  section.preco .conteudo .quadro p.total span {
+    font-size: 5rem;
+  }
+}

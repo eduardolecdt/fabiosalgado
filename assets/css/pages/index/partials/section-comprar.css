@@ -1,0 +1,126 @@
+/*
+
+INDEX partials SECTION > COMPRAR
+
+*/
+
+section.comprar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+section.comprar .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+  background-color: var(--cor-secundaria-2);
+  width: 100%;
+  max-width: 700px;
+}
+
+section.comprar .quadro h2 {
+  font-family: var(--fonte-extrabold);
+  font-size: 2rem;
+  max-width: 400px;
+  color: var(--cor-branco);
+}
+
+section.comprar .quadro h3 {
+  font-family: var(--fonte-regular);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--cor-branco);
+  max-width: 400px;
+  padding: 10px 0px 30px 0px;
+}
+
+section.comprar .quadro p.total {
+  font-family: var(--fonte-extrabold);
+  color: var(--cor-laranja);
+  font-size: 6rem;
+}
+
+section.comprar .quadro p.total span {
+  font-size: 8rem;
+}
+
+section.comprar .quadro p.parcelado {
+  font-family: var(--fonte-regular);
+  color: var(--cor-branco);
+  font-size: 1.7rem;
+  padding: 0px 0px 20px 0px;
+}
+
+section.comprar .quadro button {
+  font-family: var(--fonte-extrabold);
+  font-size: 1.1rem;
+  color: var(--cor-branco);
+  background-color: var(--cor-laranja);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 50px;
+  min-height: 50px;
+  width: 220px;
+  position: relative;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid var(--cor-secundaria-1);
+}
+
+section.comprar .quadro button div {
+  position: absolute;
+  bottom: -10px;
+  height: 5px;
+  min-height: 5px;
+  width: 50%;
+  background-color: var(--cor-laranja);
+  transition: all 0.2s;
+}
+
+section.comprar .quadro button:hover {
+  opacity: 0.8;
+}
+
+section.comprar .quadro button:hover div {
+  width: 100%;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 800px) {
+  section.comprar .quadro {
+    padding: 50px 20px;
+  }
+  section.comprar .quadro h2 {
+    font-size: 1.5rem;
+    max-width: 300px;
+  }
+  section.comprar .quadro h3 {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  section.comprar .quadro p.total {
+    font-size: 2rem;
+  }
+  section.comprar .quadro p.total span {
+    font-size: 4rem;
+  }
+  section.comprar .quadro p.parcelado {
+    font-size: 1.2rem;
+  }
+  section.comprar .quadro button {
+    font-size: 0.9rem;
+    height: 40px;
+    min-height: 40px;
+    width: 180px;
+  }
+}

@@ -1,0 +1,45 @@
+/*
+
+INDEX partials WHATSAPP
+
+*/
+
+div.whatsapp {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transition: all 0.2s;
+  cursor: pointer;
+  z-index: 5;
+}
+
+div.whatsapp img {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  box-shadow: 0px 0px 50px 0px var(--cor-secundaria-1);
+  background-color: var(--cor-secundaria-1);
+  border-radius: 13px;
+  pointer-events: none;
+}
+
+div.whatsapp:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 800px) {
+  div.whatsapp {
+    top: 10px;
+    right: 10px;
+  }
+  div.whatsapp img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+}

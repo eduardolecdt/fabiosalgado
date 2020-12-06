@@ -1,0 +1,72 @@
+/*
+
+INDEX partials SECTION > GARANTIA
+
+*/
+
+section.garantia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: var(--cor-secundaria-2);
+}
+
+section.garantia .quadro img {
+  width: 100%;
+  max-width: 250px;
+}
+
+section.garantia .quadro {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.garantia .quadro .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+section.garantia .quadro .texto h2 {
+  font-family: var(--fonte-medium);
+  font-size: 1.6rem;
+  color: var(--cor-laranja);
+}
+
+section.garantia .quadro .texto p {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--cor-branco);
+  padding-top: 25px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 900px) {
+  section.garantia .quadro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  section.garantia .quadro .texto p {
+    font-size: 1rem;
+  }
+  section.garantia .quadro .texto h2 {
+    font-size: 2rem;
+    max-width: 180px;
+  }
+  section.garantia .quadro img {
+    margin-bottom: 30px;
+    max-width: 200px;
+  }
+}

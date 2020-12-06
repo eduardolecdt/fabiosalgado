@@ -7,3 +7,16 @@ pages INDEX
 @import '../../global/global.css';
 
 /* partials */
+
+@import './partials/whatsapp.css';
+
+@import './partials/header.css';
+@import './partials/section-autor.css';
+@import './partials/section-conteudo.css';
+@import './partials/section-soma.css';
+@import './partials/section-preco.css';
+@import './partials/section-tempo.css';
+@import './partials/section-garantia.css';
+@import './partials/section-perguntas.css';
+@import './partials/section-comprar.css';
+@import './partials/footer.css';

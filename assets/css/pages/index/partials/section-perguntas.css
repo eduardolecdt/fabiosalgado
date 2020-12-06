@@ -1,0 +1,81 @@
+/*
+
+INDEX partials SECTION > PERGUNTAS
+
+*/
+
+section.perguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 100px 50px;
+  background-image: url('../../../../images/pages/index/background-perguntas.png');
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+section.perguntas h2 {
+  font-family: var(--fonte-medium);
+  font-size: 2rem;
+  width: 100%;
+  max-width: 250px;
+  color: var(--cor-branco);
+}
+
+section.perguntas h2 span {
+  font-size: 2.5rem;
+  color: var(--cor-laranja);
+}
+
+section.perguntas h3 {
+  font-family: var(--fonte-regular);
+  font-size: 1.3rem;
+  color: var(--cor-branco);
+  padding-top: 35px;
+}
+
+section.perguntas h3 span {
+  font-family: var(--fonte-extrabold);
+  color: var(--cor-laranja);
+}
+
+section.perguntas p {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 700px;
+  color: var(--cor-laranja);
+  padding-top: 10px;
+}
+
+section.perguntas p span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 800px) {
+  section.perguntas {
+    padding: 80px 20px;
+  }
+  section.perguntas h2 {
+    font-size: 1.5rem;
+    max-width: 250px;
+  }
+  section.perguntas h2 span {
+    font-size: 2rem;
+    color: var(--cor-laranja);
+  }
+  section.perguntas h3 {
+    font-size: 1.2rem;
+  }
+  section.perguntas p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+}

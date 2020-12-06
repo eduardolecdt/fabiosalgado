@@ -1,0 +1,143 @@
+/*
+
+INDEX partials SECTION > CONTEUDO
+
+*/
+
+section.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0px;
+  background-image: url('../../../../images/pages/index/background-conteudo.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+section.conteudo h2 {
+  font-family: var(--fonte-medium);
+  font-size: 2rem;
+  color: var(--cor-laranja);
+  width: 100%;
+  max-width: 400px;
+  padding: 0px 20px 40px 20px;
+}
+
+/* Seta */
+
+section.conteudo .seta {
+  position: absolute;
+  top: 130px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+section.conteudo .seta:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+section.conteudo .seta.avancar {
+  right: 40px;
+}
+
+section.conteudo .seta.voltar {
+  left: 40px;
+}
+
+/* Slide */
+
+section.conteudo .slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+section.conteudo .slide .itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: all 0.5s;
+}
+
+section.conteudo .slide .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: left;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  height: 500px;
+  min-height: 500px;
+  max-height: 500px;
+  margin-left: 30px;
+  background-color: var(--cor-secundaria-2);
+  position: relative;
+}
+
+section.conteudo .slide .itens .item .texto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+section.conteudo .slide .itens .item .texto h3 {
+  font-family: var(--fonte-medium);
+  font-size: 0.9rem;
+  color: var(--cor-laranja);
+  padding-bottom: 5px;
+}
+
+section.conteudo .slide .itens .item .texto p {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--cor-branco);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 800px) {
+  section.conteudo h2 {
+    font-size: 1.5rem;
+    max-width: 300px;
+    padding: 0px 20px 100px 20px;
+  }
+  section.conteudo .seta {
+    top: 170px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 10px;
+  }
+  section.conteudo .seta.avancar {
+    left: 50%;
+    right: auto;
+  }
+  section.conteudo .seta.voltar {
+    right: 50%;
+    left: auto;
+  }
+  section.conteudo .slide .itens .item .texto h3 {
+    font-size: 0.8rem;
+  }
+  section.conteudo .slide .itens .item .texto p {
+    font-size: 1rem;
+  }
+}
