@@ -59,6 +59,7 @@ header .texto .quadro {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: rgb(11, 7, 30, 0.95);
   box-shadow: 0px 0px 100px 0px rgb(11, 7, 30, 0.8);
   width: 100%;
@@ -95,7 +96,6 @@ header .texto .quadro p {
   line-height: 1.5;
   width: 100%;
   max-width: 500px;
-  text-align: center;
   color: var(--cor-branco);
   padding-bottom: 30px;
 }
@@ -208,7 +208,6 @@ header .texto .quadro form button:hover div {
   header .texto .quadro p {
     font-size: 0.9rem;
     max-width: 600px;
-    text-align: left;
   }
   header .texto .quadro form input {
     font-size: 1rem;
