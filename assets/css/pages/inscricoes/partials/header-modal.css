@@ -78,13 +78,22 @@ header .modal .conteudo img.nome {
   margin-top: 20px;
 }
 
+header .modal .conteudo h3 {
+  font-family: var(--fonte-regular);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 400px;
+  color: var(--cor-laranja);
+  padding-top: 30px;
+}
+
 header .modal .conteudo p {
   font-family: var(--fonte-regular);
   font-size: 1.3rem;
   line-height: 1.8;
   max-width: 500px;
   color: var(--cor-branco);
-  padding-top: 30px;
+  padding-top: 14px;
 }
 
 header .modal .conteudo p:nth-last-child(1) {
@@ -107,5 +116,8 @@ header .modal .conteudo p:nth-last-child(1) {
   }
   header .modal .conteudo p {
     font-size: 1rem;
+  }
+  header .modal .conteudo h3 {
+    font-size: 1.3rem;
   }
 }
