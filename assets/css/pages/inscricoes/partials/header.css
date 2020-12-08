@@ -20,7 +20,7 @@ header {
 
 header .imagem img {
   position: absolute;
-  bottom: 30px;
+  top: 30px;
   left: 30px;
   width: 150px;
   height: 150px;
@@ -176,12 +176,12 @@ header .texto .quadro form button:hover div {
 
 @media screen and (max-width: 1000px) {
   header .imagem img {
-    bottom: 20px;
-    left: 20px;
-    width: 80px;
-    height: 80px;
-    max-width: 80px;
-    max-height: 80px;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
     border: 3px solid var(--cor-laranja);
   }
   header .texto {
@@ -189,14 +189,13 @@ header .texto .quadro form button:hover div {
   }
   header .texto .quadro {
     box-shadow: 0px 0px 50px 0px rgb(11, 7, 30, 0.7);
-    padding: 100px 30px 50px 30px;
+    padding: 65px 25px 0px 25px;
   }
 }
 
 @media screen and (max-width: 600px) {
   header .texto .quadro {
     box-shadow: 0px 0px 30px 0px rgb(11, 7, 30, 0.7);
-    padding: 0px 25px 30px 25px;
   }
   header .texto .quadro h2 {
     font-size: 3rem;
