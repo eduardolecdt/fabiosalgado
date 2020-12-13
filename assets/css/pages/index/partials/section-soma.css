@@ -67,6 +67,7 @@ section.soma .quadros .quadro p {
   font-family: var(--fonte-extrabold);
   font-size: 1.2rem;
   color: var(--cor-branco);
+  text-decoration: line-through;
 }
 
 section.soma .quadros .quadro p span {

@@ -18,7 +18,7 @@
     window.addEventListener('click', (evento) => {
       if (!evento.target.matches(nome)) return
 
-      const url = 'https://wa.me/5593999540115'
+      const url = 'https://wa.me/5515998439215'
       toExternalPage(url)
     })
   }
@@ -29,7 +29,7 @@
     window.addEventListener('click', (evento) => {
       if (!evento.target.matches(nome)) return
 
-      const url = 'https://hotmart.com'
+      const url = 'https://sun.eduzz.com/676220'
       toExternalPage(url)
     })
   }
