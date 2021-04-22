@@ -112,8 +112,8 @@ class Temporizador {
   temporizador.definirMensagemEncerramento('h4[name="acabou2"]', 'O seu tempo acabou!')
   temporizador2.definirMensagemEncerramento('h4[name="acabou"]', 'O seu tempo acabou!')
 
-  temporizador.definirDataFinal(2020, 12, 21)
-  temporizador2.definirDataFinal(2020, 12, 21)
+  temporizador.definirDataFinal(2021, 04, 28)
+  temporizador2.definirDataFinal(2021, 04, 28)
 
   temporizador.definirBotoesASeremBloqueados('button[name="comprar"]', 'desativado')
 
