@@ -18,7 +18,7 @@
     window.addEventListener('click', (evento) => {
       if (!evento.target.matches(nome)) return
 
-      const url = 'https://wa.me/5515998439215'
+      const url = 'https://wa.me/5593991637714'
       toExternalPage(url)
     })
   }
